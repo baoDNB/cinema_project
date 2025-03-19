@@ -1,9 +1,19 @@
 <template>
     <div>
         <HeaderComponent />
+        <Nav_bar />
         <div class="container ">
-          <h2 class="now-showing-title">NOW SHOWING/SNEAK SHOW</h2>
-          <Slick/>
+
+            <h2 class="title">PHIM ĐANG CHIẾU</h2>
+            <Slick/>
+
+            <h2 class="title">COMBO ĐẶC BIỆT</h2>
+            <Slick1/>
+
+
+            <h2 class="title">KHUYẾN MÃI</h2>
+            <Slick2/>
+
         </div>
         <FooterComponent />
     </div>
@@ -32,9 +42,8 @@
     width: 100%;
 }
 
-.now-showing-title {
+.title {
     display: inline-block;
-
     padding: 8px 20px;
     font-size: 18px;
     font-weight: bold;
@@ -43,7 +52,7 @@
     border-radius: 10px; /* Bo góc */
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin: 20px auto; /* Canh giữa */
+    margin: 50px auto; /* Canh giữa */
     text-align: center;
 }
 
@@ -51,17 +60,21 @@
 
 
 <script>
-import HeaderComponent from "../HeaderComponent/HeaderComponent.vue";
+import Nav_bar   from "../HeaderComponent/Nav_bar.vue";
+import HeaderComponent from "../HeaderComponent/HeadComponent.vue";
 import FooterComponent from "../FooterComponent/FooterComponent.vue";
-import Slick from "../Slick.vue";
-
-
+import Slick from "../SlickComponent.vue/Slick.vue";
+import Slick1 from "../SlickComponent.vue/Slick1.vue";
+import Slick2 from "../SlickComponent.vue/Slick2.vue";
 export default {
     components: {
-        HeaderComponent,
-        FooterComponent,
 
+        HeaderComponent,
+        Nav_bar,
+        FooterComponent,
+        Slick1,
         Slick,
+        Slick2
     },
 };
 </script>

@@ -1,8 +1,5 @@
 <template>
-    <header class="header">
-        <div class="top-banner">
-            <img src="@/assets/banner.png" alt="Mừng Xuân Ất Tỵ 2025" />
-        </div>
+
         <nav class="nav-bar">
             <div class="logo">
                 <img src="@/assets/bhd-cineplex-logo.png" alt="BHD Cineplex" />
@@ -32,12 +29,12 @@
                 <button class="login">Đăng nhập/Đăng ký</button>
             </div>
         </nav>
-    </header>
+
 </template>
 
 <script>
 export default {
-    name: "HeaderComponent",
+    name: "Nav_bar",
 };
 </script>
 
@@ -52,9 +49,13 @@ export default {
 
 .nav-bar {
     display: flex;
+    position: sticky;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 75px;
     background: white;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .logo img {
@@ -127,7 +128,7 @@ button {
     background-color: rgba(0, 0, 0, 0.7);
     min-width: 180px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 9999;
     border-radius: 5px;
     top: 100%;
     left: 0;

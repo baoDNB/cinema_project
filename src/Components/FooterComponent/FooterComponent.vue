@@ -61,7 +61,7 @@
     background-color: #0c0c0c;
 /*  */
     color: white;
-    padding: 30px 50px;
+    padding: 30px 75px;
 
 }
 

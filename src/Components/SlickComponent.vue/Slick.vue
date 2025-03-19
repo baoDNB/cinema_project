@@ -25,7 +25,7 @@
 <script>
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
-import CardComponent from "./CardComponent/CardComponent.vue";
+import CardComponent from "../CardComponent/CardComponent.vue";
 
 export default {
   components: {
@@ -95,7 +95,7 @@ export default {
 <style>
 
 .carousel-container {
-  max-width: 75%;
+  max-width: 90%;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -128,8 +128,6 @@ export default {
   background-color: #58b947 !important;
   transform: scale(1.3);
 }
-
-
 
 .carousel__prev,
 .carousel__next {
