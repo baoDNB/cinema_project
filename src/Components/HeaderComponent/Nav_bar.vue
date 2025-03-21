@@ -2,14 +2,14 @@
 
         <nav class="nav-bar">
             <div class="logo">
-                <img src="@/assets/bhd-cineplex-logo.png" alt="BHD Cineplex" />
+              <router-link to="/"><img src="@/assets/bhd-cineplex-logo.png" alt="BHD Cineplex" /></router-link>
             </div>
             <ul class="nav-links">
                 <li class="dropdown">
                     <button class="dropdown-btn">NOW SHOWING ▼</button>
                     <div class="dropdown-content">
-                        <a href="#">LỊCH CHIẾU PHIM</a>
-                        <a href="#">LỊCH CHIẾU RẠP</a>
+                        <router-link to="/movies">LỊCH CHIẾU PHIM</router-link>
+                        <router-link to="/cinemas">LỊCH CHIẾU RẠP</router-link>
                     </div>
                 </li>
                 <li><a href="#">ĐỒ ĂN/COMBO</a></li>

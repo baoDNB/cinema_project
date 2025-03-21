@@ -95,9 +95,10 @@ export default {
 <style>
 
 .carousel-container {
-  max-width: 90%;
+
   margin: auto;
   margin-bottom: 30px;
+  max-width: 1355px;
 }
 
 

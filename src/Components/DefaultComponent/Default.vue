@@ -1,6 +1,8 @@
 <template>
     <div>
         <HeaderComponent />
+
+        <div>
         <Nav_bar />
         <div class="container ">
 
@@ -14,7 +16,8 @@
             <h2 class="title">KHUYẾN MÃI</h2>
             <Slick2/>
 
-        </div>
+            </div>
+      </div>
         <FooterComponent />
     </div>
 </template>
@@ -61,7 +64,7 @@
 
 <script>
 import Nav_bar   from "../HeaderComponent/Nav_bar.vue";
-import HeaderComponent from "../HeaderComponent/HeadComponent.vue";
+import HeaderComponent from "../HeaderComponent/HeaderComponent.vue";
 import FooterComponent from "../FooterComponent/FooterComponent.vue";
 import Slick from "../SlickComponent.vue/Slick.vue";
 import Slick1 from "../SlickComponent.vue/Slick1.vue";

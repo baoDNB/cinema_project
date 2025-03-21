@@ -1,7 +1,9 @@
 <template>
   <div class="header">
     <div class="top-banner">
-      <img src="@/assets/banner.png" alt="Mừng Xuân Ất Tỵ 2025" />
+      <router-link to="/">
+        <img src="@/assets/banner.png" alt="Mừng Xuân Ất Tỵ 2025" />
+      </router-link>
     </div>
   </div>
 </template>
