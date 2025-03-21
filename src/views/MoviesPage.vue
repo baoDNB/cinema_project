@@ -1,23 +1,15 @@
 <template>
   <div>
       <HeaderComponent />
-
       <div>
-      <Nav_bar />
-      <div class="container ">
-
-          <h2 class="title">PHIM ĐANG CHIẾU</h2>
-          <Slick/>
-
-          <h2 class="title">COMBO ĐẶC BIỆT</h2>
-          <Slick1/>
-
-
-          <h2 class="title">KHUYẾN MÃI</h2>
-          <Slick2/>
-
-          </div>
-    </div>
+        <Nav_bar />
+        <div class="container ">
+          <div class="title">Danh sách phim</div>
+            <CardMovie/>
+            <div class="title">KHUYẾN MÃI</div>
+            <Slick2/>
+        </div>
+      </div>
       <FooterComponent />
   </div>
 </template>
@@ -63,15 +55,11 @@
 
 
 <script>
-
-import Slick from "../Components/SlickComponent/Slick.vue";
-import Slick1 from "../Components/SlickComponent/Slick1.vue";
+import CardMovie from "../Components/CardComponent/CardMovie.vue";
 import Slick2 from "../Components/SlickComponent/Slick2.vue";
 export default {
   components: {
-
-      Slick1,
-      Slick,
+      CardMovie,
       Slick2
   },
 };
